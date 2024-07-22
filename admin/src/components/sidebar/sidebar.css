@@ -25,6 +25,11 @@
   border-right: 0;
 }
 
+.sidebar-option.active {
+  background-color: #edffee;
+  border-color: #008c15;
+}
+
 /* media query */
 @media (max-width: 900px) {
   .sidebar-option p {
