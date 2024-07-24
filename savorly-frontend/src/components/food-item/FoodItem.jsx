@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import './fooditem.css';
-// import { assets } from '../../assets/assets';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
-import { assets } from '../../assets/assets';
 import { StoreContext } from '../../context/StoreContext';
+import { assets } from '../../assets/assets';
 
 // const labels = {
 //   0.5: 'Useless',
@@ -35,7 +34,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
           src={url + '/images/' + image}
           alt=''
         />
-        {!cartItems[id] ? (
+        {!cartItems?.[id] ? (
           <img
             src={assets.add_icon_white}
             alt=''
