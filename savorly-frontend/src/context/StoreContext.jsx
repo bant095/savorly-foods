@@ -8,7 +8,7 @@ const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
 
   //set backend url for api consumption of lofin/register
-  const url = 'http://localhost:4000';
+  const url = 'https://savorly-foods-backend.onrender.com';
 
   //store token
   const [token, setToken] = useState('');
